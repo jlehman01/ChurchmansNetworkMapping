@@ -1,15 +1,14 @@
 ---
-title: "Map Wilmapco Model Links"
-author: "Renaissance Planning"
-date: "10/11/2020"
-output: html_document
+title: "WILMAPCO Model Network Analysis"
+output_dir: "docs" 
+output:
+  html_document:
     theme: flatly
-editor_options: 
-  chunk_output_type: console
+
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, fig.width=12)
 
 library(leaflet)
 library(htmltools)
@@ -23,7 +22,7 @@ library(leafpop)
 ```
 
 
-```{r}
+```{r add polylineoffset functions}
 
 #Code adapted from https://gist.github.com/timelyportfolio/8f6c8cc27597466351ad377e6774c30f AND https://gist.github.com/jcheng5/c084a59717f18e947a17955007dc5f92
 
@@ -49,7 +48,7 @@ src=c(file="...")
 
 ```
 
-```{r}
+```{r read in data and create map}
 
 #st_layers("K:/Projects/WILMAPCO/Features/Transp/ChurchmanCrossing_GisInv_Delivery.gdb")
 
