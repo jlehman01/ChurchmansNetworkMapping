@@ -36,6 +36,6 @@ vignettes/*.pdf
 *.knit.md
 
 # Other files
-*.Rmd
-*.Rproj
+.Rmd
+.Rproj
 /leaflet_polylineoffset_js/
