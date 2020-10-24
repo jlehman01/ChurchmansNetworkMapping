@@ -41,3 +41,6 @@ vignettes/*.pdf
 MapNetwork_with_Offset.Rmd
 NetworkMapping.Rproj
 /leaflet_polylineoffset_js/
+/*
+/*/
+!/docs/
